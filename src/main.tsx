@@ -1,4 +1,5 @@
 import { createRoot } from 'react-dom/client';
+import { Analytics } from '@vercel/analytics/react';
 
 import App from './App';
 import { ErrorBoundary } from './error-boundary';
@@ -11,7 +12,10 @@ createRoot(document.getElementById('root')!, {
     console.error(error, errorInfo.componentStack);
   },
 }).render(
-  <ErrorBoundary>
-    <App />
-  </ErrorBoundary>,
+  <>
+    <ErrorBoundary>
+      <App />
+    </ErrorBoundary>
+    <Analytics />
+  </>,
 );
