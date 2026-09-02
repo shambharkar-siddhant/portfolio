@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Siddhant S asterisk favicon</title>
+  <desc id="desc">Warm cream rounded square with a burgundy serif S and mustard hand-drawn asterisk.</desc>
+
+  <!-- Background -->
+  <rect x="16" y="16" width="480" height="480" rx="92" fill="#F6EEDC"/>
+
+  <!-- Serif S -->
+  <text
+    x="247"
+    y="382"
+    text-anchor="middle"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="350"
+    font-weight="400"
+    fill="#651B1B">S</text>
+
+  <!-- Hand-drawn asterisk -->
+  <g
+    transform="translate(382 136)"
+    fill="none"
+    stroke="#D99716"
+    stroke-width="13"
+    stroke-linecap="round"
+    stroke-linejoin="round">
+    <path d="M0 -38 L0 39"/>
+    <path d="M-35 -20 L35 20"/>
+    <path d="M-35 20 L35 -20"/>
+  </g>
+</svg>
