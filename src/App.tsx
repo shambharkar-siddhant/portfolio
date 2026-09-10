@@ -315,7 +315,7 @@ function App() {
             <div className="contact-copy">
               <h2>Let’s make<br />something <em>meaningful.</em></h2>
               <p>Good conversations often begin with a half-formed idea. Whether you’re building something thoughtful, untangling a difficult problem, or simply want to exchange perspectives, leave a note. I’d genuinely love to hear from you.</p>
-              <div className="social-links"><a href="https://www.linkedin.com/in/siddhant-shambharkar/" target="_blank" rel="noreferrer" aria-label="LinkedIn" data-testid="link-linkedin"><Linkedin size={17} /></a><a href="https://github.com/siddhantshambharkar" target="_blank" rel="noreferrer" aria-label="GitHub" data-testid="link-github"><Github size={17} /></a><a href="https://www.instagram.com/siddhant_shambharkar" target="_blank" rel="noreferrer" aria-label="Instagram" data-testid="link-instagram"><Instagram size={17} /></a></div>
+              <div className="social-links"><a href="https://www.linkedin.com/in/siddhant-shambharkar/" target="_blank" rel="noreferrer" aria-label="LinkedIn" data-testid="link-linkedin"><Linkedin size={17} /></a><a href="https://github.com/shambharkar-siddhant" target="_blank" rel="noreferrer" aria-label="GitHub" data-testid="link-github"><Github size={17} /></a><a href="https://www.instagram.com/siddhant_shambharkar" target="_blank" rel="noreferrer" aria-label="Instagram" data-testid="link-instagram"><Instagram size={17} /></a></div>
             </div>
             <form className="contact-form" action="https://formspree.io/f/xdkgnzek" method="POST" onSubmit={submitContactForm}>
               <div className="form-field">
