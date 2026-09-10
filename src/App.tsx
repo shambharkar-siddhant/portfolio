@@ -293,18 +293,18 @@ function App() {
           <div className="section-aside"><SectionLabel>Beyond work</SectionLabel><span className="aside-index">04 / 04</span></div>
           <div className="beyond-heading"><h2>Life beyond<br />the <em>screen.</em></h2><p>Some of the best stories begin where the signal ends—with a trail, an open road, or a plan that changes along the way.</p></div>
           <div className="postcard-grid">
-            <figure className="postcard postcard-trek">
+            <a className="postcard postcard-trek" href="https://siddhants-travel-tails.vercel.app/" target="_blank" rel="noreferrer" aria-label="Read about trekking on Siddhant's travel blog">
               <div className="postcard-photo"><img src="/trekking.webp" alt="Trekking through snow-covered mountains" /></div>
-              <figcaption><span>01 / Into the wild</span><h3>Trekking</h3><p>Cold air, long climbs, clear thoughts.</p></figcaption>
-            </figure>
-            <figure className="postcard postcard-travel">
+              <div className="postcard-caption"><span>01 / Into the wild</span><h3>Trekking</h3><p>Cold air, long climbs, clear thoughts.</p></div>
+            </a>
+            <a className="postcard postcard-travel" href="https://siddhants-travel-tails.vercel.app/" target="_blank" rel="noreferrer" aria-label="Read about travelling on Siddhant's travel blog">
               <div className="postcard-photo"><img src="/rafting.webp" alt="Rafting with friends through a mountain river" /></div>
-              <figcaption><span>02 / Going places</span><h3>Travelling</h3><p>New roads, good company, better stories.</p></figcaption>
-            </figure>
-            <figure className="postcard postcard-bike">
+              <div className="postcard-caption"><span>02 / Going places</span><h3>Travelling</h3><p>New roads, good company, better stories.</p></div>
+            </a>
+            <a className="postcard postcard-bike" href="https://siddhants-travel-tails.vercel.app/" target="_blank" rel="noreferrer" aria-label="Read about bike trips on Siddhant's travel blog">
               <div className="postcard-photo"><img src="/bike-ride.webp" alt="Motorcycle trip on a mountain road" /></div>
-              <figcaption><span>03 / On two wheels</span><h3>Bike trips</h3><p>The long way is usually the right one.</p></figcaption>
-            </figure>
+              <div className="postcard-caption"><span>03 / On two wheels</span><h3>Bike trips</h3><p>The long way is usually the right one.</p></div>
+            </a>
           </div>
         </section>
 

@@ -230,8 +230,8 @@ h2 { margin: 0; font: 400 clamp(55px, 7vw, 104px)/.84 var(--font-display); lette
 .postcard:hover img { transform: scale(1.035); filter: saturate(1) contrast(1); }
 .postcard-trek img { object-position: center 63%; }
 .postcard-bike img { object-position: center 45%; }
-.postcard figcaption { padding: 17px 8px 0; }
-.postcard figcaption span { color: var(--terracotta); font: 9px var(--font-mono-local); letter-spacing: .06em; text-transform: uppercase; }
+.postcard-caption { padding: 17px 8px 0; }
+.postcard-caption span { color: var(--terracotta); font: 9px var(--font-mono-local); letter-spacing: .06em; text-transform: uppercase; }
 .postcard h3 { margin: 11px 0 5px; font: 400 clamp(36px, 3.5vw, 52px)/.85 var(--font-display); letter-spacing: -.045em; }
 .postcard p { margin: 0; color: var(--brown); font-size: 11px; line-height: 1.4; }
 
