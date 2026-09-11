@@ -12,10 +12,10 @@ const navItems = [
 ];
 
 const externalLinks = [
-  { label: 'GitHub', href: 'https://github.com/shambharkar-siddhant' },
-  { label: 'Medium', href: 'https://shambharkarsiddhant.medium.com/' },
-  { label: 'Travel blog', href: 'https://siddhants-travel-tails.vercel.app/' },
-  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/siddhant-shambharkar/' },
+  { label: 'GitHub', href: 'https://github.com/shambharkar-siddhant', icon: Github },
+  { label: 'Medium', href: 'https://shambharkarsiddhant.medium.com/', icon: PenLine },
+  { label: 'Travel blog', href: 'https://siddhants-travel-tails.vercel.app/', icon: Sparkles },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/siddhant-shambharkar/', icon: Linkedin },
 ];
 
 const experiences = [
@@ -111,7 +111,9 @@ function App() {
 
   useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') setMenuOpen(false);
+      if (event.key === 'Escape') {
+        setMenuOpen(false);
+      }
     };
     document.addEventListener('keydown', onKeyDown);
     return () => document.removeEventListener('keydown', onKeyDown);
@@ -147,9 +149,16 @@ function App() {
 
   return (
     <div className="portfolio-shell">
-      <aside className="elsewhere-strip" aria-label="Elsewhere on the web">
-        <span>Elsewhere</span>
-        <div>{externalLinks.map((link) => <a href={link.href} target="_blank" rel="noreferrer" key={link.label}>{link.label} <span>↗</span></a>)}</div>
+      <aside className="social-rail" aria-label="Find me online">
+        {externalLinks.map((link) => {
+          const Icon = link.icon;
+          return (
+            <a href={link.href} target="_blank" rel="noreferrer" key={link.label} aria-label={link.label}>
+              <Icon size={18} strokeWidth={1.8} aria-hidden="true" />
+              <span>{link.label}</span>
+            </a>
+          );
+        })}
       </aside>
       <header className="site-header">
         <a className="brand-mark" href="#home" onClick={closeMenu} data-testid="link-brand">
